@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# Généré par Mocodo 2.3.7 le Sat, 02 Jan 2021 08:07:39
+# Généré par Mocodo 2.3.7 le Sat, 02 Jan 2021 08:12:26
 
 from __future__ import division
 from math import hypot
@@ -171,26 +171,28 @@ lines += '\n\n<svg width="%s" height="%s" view_box="0 0 %s %s"\nxmlns="http://ww
 lines += u'\\n\\n<desc>Généré par Mocodo 2.3.7 le %s</desc>' % time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
 lines += '\n\n<rect id="frame" x="0" y="0" width="%s" height="%s" fill="%s" stroke="none" stroke-width="0"/>' % (width,height,colors['background_color'] if colors['background_color'] else "none")
 
-lines += u"""\n\n<!-- Association RESEARCH -->"""
-(x,y) = (cx[u"RESEARCH"],cy[u"RESEARCH"])
+lines += u"""\n\n<!-- Association CAN LIKE -->"""
+(x,y) = (cx[u"CAN LIKE"],cy[u"CAN LIKE"])
 (ex,ey) = (cx[u"USER"],cy[u"USER"])
-leg=straight_leg_factory(ex,ey,40,68,x,y,41,25,22+2*card_margin,15+2*card_margin)
-lines += u"""\n<line x1="%(ex)s" y1="%(ey)s" x2="%(ax)s" y2="%(ay)s" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'ex': ex, 'ey': ey, 'ax': x, 'ay': y, 'stroke_color': colors['leg_stroke_color']}
-(tx,ty)=offset(*leg.card_pos(False,shift[u"RESEARCH,USER"]))
-lines += u"""\n<text x="%(tx)s" y="%(ty)s" fill="%(text_color)s" font-family="Verdana" font-size="12">1,N</text>""" % {'tx': tx, 'ty': ty, 'text_color': colors['card_text_color']}
-(ex,ey) = (cx[u"GENDER"],cy[u"GENDER"])
-leg=straight_leg_factory(ex,ey,40,34,x,y,41,25,22+2*card_margin,15+2*card_margin)
-lines += u"""\n<line x1="%(ex)s" y1="%(ey)s" x2="%(ax)s" y2="%(ay)s" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'ex': ex, 'ey': ey, 'ax': x, 'ay': y, 'stroke_color': colors['leg_stroke_color']}
-(tx,ty)=offset(*leg.card_pos(False,shift[u"RESEARCH,GENDER"]))
+leg=curved_leg_factory(ex,ey,40,68,x,y,36,25,22+2*card_margin,15+2*card_margin,-1.0)
+(x0, y0, x1, y1, x2, y2, x3, y3)=leg.points
+lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': x0, 'y0': y0, 'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2, 'x3': x3, 'y3': y3, 'stroke_color': colors['leg_stroke_color']}
+(tx,ty)=offset(*leg.card_pos(shift[u"CAN LIKE,USER,-1.0"]))
 lines += u"""\n<text x="%(tx)s" y="%(ty)s" fill="%(text_color)s" font-family="Verdana" font-size="12">0,N</text>""" % {'tx': tx, 'ty': ty, 'text_color': colors['card_text_color']}
-lines += u"""\n<g id="association-RESEARCH">""" % {}
-path = upper_round_rect(-41+x,-25+y,82,25,14)
+(ex,ey) = (cx[u"USER"],cy[u"USER"])
+leg=curved_leg_factory(ex,ey,40,68,x,y,36,25,22+2*card_margin,15+2*card_margin,1.0)
+(x0, y0, x1, y1, x2, y2, x3, y3)=leg.points
+lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': x0, 'y0': y0, 'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2, 'x3': x3, 'y3': y3, 'stroke_color': colors['leg_stroke_color']}
+(tx,ty)=offset(*leg.card_pos(shift[u"CAN LIKE,USER,1.0"]))
+lines += u"""\n<text x="%(tx)s" y="%(ty)s" fill="%(text_color)s" font-family="Verdana" font-size="12">0,N</text>""" % {'tx': tx, 'ty': ty, 'text_color': colors['card_text_color']}
+lines += u"""\n<g id="association-CAN LIKE">""" % {}
+path = upper_round_rect(-36+x,-25+y,72,25,14)
 lines += u"""\n	<path d="%(path)s" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'color': colors['association_cartouche_color'], 'stroke_color': colors['association_cartouche_color']}
-path = lower_round_rect(-41+x,0.0+y,82,25,14)
+path = lower_round_rect(-36+x,0.0+y,72,25,14)
 lines += u"""\n	<path d="%(path)s" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'color': colors['association_color'], 'stroke_color': colors['association_color']}
-lines += u"""\n	<rect x="%(x)s" y="%(y)s" width="82" height="50" fill="%(color)s" rx="14" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x': -41+x, 'y': -25+y, 'color': colors['transparent_color'], 'stroke_color': colors['association_stroke_color']}
-lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -41+x, 'y0': 0+y, 'x1': 41+x, 'y1': 0+y, 'stroke_color': colors['association_stroke_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">RESEARCH</text>""" % {'x': -34+x, 'y': -7.3+y, 'text_color': colors['association_cartouche_text_color']}
+lines += u"""\n	<rect x="%(x)s" y="%(y)s" width="72" height="50" fill="%(color)s" rx="14" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x': -36+x, 'y': -25+y, 'color': colors['transparent_color'], 'stroke_color': colors['association_stroke_color']}
+lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -36+x, 'y0': 0+y, 'x1': 36+x, 'y1': 0+y, 'stroke_color': colors['association_stroke_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">CAN LIKE</text>""" % {'x': -29+x, 'y': -7.3+y, 'text_color': colors['association_cartouche_text_color']}
 lines += u"""\n</g>""" % {}
 
 lines += u"""\n\n<!-- Association BELONGS TO -->"""
@@ -237,28 +239,31 @@ lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(
 lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">HAVE</text>""" % {'x': -17+x, 'y': -7.3+y, 'text_color': colors['association_cartouche_text_color']}
 lines += u"""\n</g>""" % {}
 
-lines += u"""\n\n<!-- Association CAN LIKE -->"""
-(x,y) = (cx[u"CAN LIKE"],cy[u"CAN LIKE"])
+lines += u"""\n\n<!-- Association RESEARCH -->"""
+(x,y) = (cx[u"RESEARCH"],cy[u"RESEARCH"])
 (ex,ey) = (cx[u"USER"],cy[u"USER"])
-leg=curved_leg_factory(ex,ey,40,68,x,y,36,25,22+2*card_margin,15+2*card_margin,-1.0)
-(x0, y0, x1, y1, x2, y2, x3, y3)=leg.points
-lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': x0, 'y0': y0, 'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2, 'x3': x3, 'y3': y3, 'stroke_color': colors['leg_stroke_color']}
-(tx,ty)=offset(*leg.card_pos(shift[u"CAN LIKE,USER,-1.0"]))
+leg=straight_leg_factory(ex,ey,40,68,x,y,41,25,22+2*card_margin,15+2*card_margin)
+lines += u"""\n<line x1="%(ex)s" y1="%(ey)s" x2="%(ax)s" y2="%(ay)s" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'ex': ex, 'ey': ey, 'ax': x, 'ay': y, 'stroke_color': colors['leg_stroke_color']}
+(tx,ty)=offset(*leg.card_pos(False,shift[u"RESEARCH,USER"]))
+lines += u"""\n<text x="%(tx)s" y="%(ty)s" fill="%(text_color)s" font-family="Verdana" font-size="12">1,N</text>""" % {'tx': tx, 'ty': ty, 'text_color': colors['card_text_color']}
+(ex,ey) = (cx[u"GENDER"],cy[u"GENDER"])
+leg=straight_leg_factory(ex,ey,40,34,x,y,41,25,22+2*card_margin,15+2*card_margin)
+lines += u"""\n<line x1="%(ex)s" y1="%(ey)s" x2="%(ax)s" y2="%(ay)s" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'ex': ex, 'ey': ey, 'ax': x, 'ay': y, 'stroke_color': colors['leg_stroke_color']}
+(tx,ty)=offset(*leg.card_pos(False,shift[u"RESEARCH,GENDER"]))
 lines += u"""\n<text x="%(tx)s" y="%(ty)s" fill="%(text_color)s" font-family="Verdana" font-size="12">0,N</text>""" % {'tx': tx, 'ty': ty, 'text_color': colors['card_text_color']}
-(ex,ey) = (cx[u"USER"],cy[u"USER"])
-leg=curved_leg_factory(ex,ey,40,68,x,y,36,25,22+2*card_margin,15+2*card_margin,1.0)
-(x0, y0, x1, y1, x2, y2, x3, y3)=leg.points
-lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': x0, 'y0': y0, 'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2, 'x3': x3, 'y3': y3, 'stroke_color': colors['leg_stroke_color']}
-(tx,ty)=offset(*leg.card_pos(shift[u"CAN LIKE,USER,1.0"]))
+(ex,ey) = (cx[u"DEFAULT"],cy[u"DEFAULT"])
+leg=straight_leg_factory(ex,ey,36,42,x,y,41,25,22+2*card_margin,15+2*card_margin)
+lines += u"""\n<line x1="%(ex)s" y1="%(ey)s" x2="%(ax)s" y2="%(ay)s" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'ex': ex, 'ey': ey, 'ax': x, 'ay': y, 'stroke_color': colors['leg_stroke_color']}
+(tx,ty)=offset(*leg.card_pos(False,shift[u"RESEARCH,DEFAULT"]))
 lines += u"""\n<text x="%(tx)s" y="%(ty)s" fill="%(text_color)s" font-family="Verdana" font-size="12">0,N</text>""" % {'tx': tx, 'ty': ty, 'text_color': colors['card_text_color']}
-lines += u"""\n<g id="association-CAN LIKE">""" % {}
-path = upper_round_rect(-36+x,-25+y,72,25,14)
+lines += u"""\n<g id="association-RESEARCH">""" % {}
+path = upper_round_rect(-41+x,-25+y,82,25,14)
 lines += u"""\n	<path d="%(path)s" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'color': colors['association_cartouche_color'], 'stroke_color': colors['association_cartouche_color']}
-path = lower_round_rect(-36+x,0.0+y,72,25,14)
+path = lower_round_rect(-41+x,0.0+y,82,25,14)
 lines += u"""\n	<path d="%(path)s" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'color': colors['association_color'], 'stroke_color': colors['association_color']}
-lines += u"""\n	<rect x="%(x)s" y="%(y)s" width="72" height="50" fill="%(color)s" rx="14" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x': -36+x, 'y': -25+y, 'color': colors['transparent_color'], 'stroke_color': colors['association_stroke_color']}
-lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -36+x, 'y0': 0+y, 'x1': 36+x, 'y1': 0+y, 'stroke_color': colors['association_stroke_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">CAN LIKE</text>""" % {'x': -29+x, 'y': -7.3+y, 'text_color': colors['association_cartouche_text_color']}
+lines += u"""\n	<rect x="%(x)s" y="%(y)s" width="82" height="50" fill="%(color)s" rx="14" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x': -41+x, 'y': -25+y, 'color': colors['transparent_color'], 'stroke_color': colors['association_stroke_color']}
+lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -41+x, 'y0': 0+y, 'x1': 41+x, 'y1': 0+y, 'stroke_color': colors['association_stroke_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">RESEARCH</text>""" % {'x': -34+x, 'y': -7.3+y, 'text_color': colors['association_cartouche_text_color']}
 lines += u"""\n</g>""" % {}
 
 lines += u"""\n\n<!-- Entity DEFAULT -->"""

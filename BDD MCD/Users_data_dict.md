@@ -1,11 +1,11 @@
 - Name
 - Decription
 - Image
+- Name
+- Description
 - Username
 - Firstname
 - Lastname
 - Age
 - Description
 - UserImage
-- Name
-- Description

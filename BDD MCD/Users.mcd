@@ -1,11 +1,11 @@
 DEFAULT: Name, Decription, Image
-CAN LIKE, 0N USER, 0N USER
-:
+RESEARCH, 1N USER, 0N GENDER, 0N DEFAULT
+GENDER: Name, Description
 
 HAVE, 0N DEFAULT, 1N USER
 USER: Username, Firstname, Lastname, Age, Description, UserImage
-RESEARCH, 1N USER, 0N GENDER
+BELONGS TO, 0N GENDER, 11 USER
 
 :
-BELONGS TO, 0N GENDER, 11 USER
-GENDER: Name, Description
+CAN LIKE, 0N USER, 0N USER
+:

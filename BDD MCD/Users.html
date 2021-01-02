@@ -18,9 +18,16 @@
   )
 </div>
 <div>
-  <span class='relation'>CAN LIKE</span> (
+  <span class='relation'>RESEARCH</span> (
     <span class='foreign primary'>Username</span>,
-    <span class='foreign primary'>Username.1</span>
+    <span class='foreign primary'>Name</span>,
+    <span class='foreign primary'>Name.1</span>
+  )
+</div>
+<div>
+  <span class='relation'>GENDER</span> (
+    <span class='primary'>Name</span>,
+    <span class='normal'>Description</span>
   )
 </div>
 <div>
@@ -41,15 +48,9 @@
   )
 </div>
 <div>
-  <span class='relation'>RESEARCH</span> (
+  <span class='relation'>CAN LIKE</span> (
     <span class='foreign primary'>Username</span>,
-    <span class='foreign primary'>Name</span>
-  )
-</div>
-<div>
-  <span class='relation'>GENDER</span> (
-    <span class='primary'>Name</span>,
-    <span class='normal'>Description</span>
+    <span class='foreign primary'>Username.1</span>
   )
 </div>
 </div>
