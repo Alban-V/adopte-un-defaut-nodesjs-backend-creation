@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="319" height="347" view_box="0 0 319 347"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Sat, 02 Jan 2021 08:07:39</desc>
+
+<rect id="frame" x="0" y="0" width="319" height="347" fill="#ffffbf" stroke="none" stroke-width="0"/>
+
+<!-- Association RESEARCH -->
+<line x1="149" y1="186" x2="269" y2="186" stroke="#f46d43" stroke-width="2"/>
+<text x="194" y="203.0" fill="#1a9850" font-family="Verdana" font-size="12">1,N</text>
+<line x1="269" y1="304" x2="269" y2="186" stroke="#f46d43" stroke-width="2"/>
+<text x="274.0" y="262" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-RESEARCH">
+	<path d="M 296 161 a 14 14 90 0 1 14 14 V 186 h -82 V 175 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 310 186.0 v 11 a 14 14 90 0 1 -14 14 H 242 a 14 14 90 0 1 -14 -14 V 186.0 H 82" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="228" y="161" width="82" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="228" y1="186" x2="310" y2="186" stroke="#f46d43" stroke-width="1"/>
+	<text x="235" y="178.7" fill="#000000" font-family="Verdana" font-size="12">RESEARCH</text>
+</g>
+
+<!-- Association BELONGS TO -->
+<line x1="269" y1="304" x2="149" y2="304" stroke="#f46d43" stroke-width="2"/>
+<text x="202" y="321.0" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<line x1="149" y1="186" x2="149" y2="304" stroke="#f46d43" stroke-width="2"/>
+<text x="154.0" y="271" fill="#1a9850" font-family="Verdana" font-size="12">1,1</text>
+<g id="association-BELONGS TO">
+	<path d="M 183 279 a 14 14 90 0 1 14 14 V 304 h -96 V 293 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 197 304.0 v 11 a 14 14 90 0 1 -14 14 H 115 a 14 14 90 0 1 -14 -14 V 304.0 H 96" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="101" y="279" width="96" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="101" y1="304" x2="197" y2="304" stroke="#f46d43" stroke-width="1"/>
+	<text x="108" y="296.7" fill="#000000" font-family="Verdana" font-size="12">BELONGS TO</text>
+</g>
+
+<!-- Association HAVE -->
+<line x1="45" y1="51" x2="45" y2="186" stroke="#f46d43" stroke-width="2"/>
+<text x="50.0" y="110" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<line x1="149" y1="186" x2="45" y2="186" stroke="#f46d43" stroke-width="2"/>
+<text x="82" y="203.0" fill="#1a9850" font-family="Verdana" font-size="12">1,N</text>
+<g id="association-HAVE">
+	<path d="M 55 161 a 14 14 90 0 1 14 14 V 186 h -48 V 175 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 69 186.0 v 11 a 14 14 90 0 1 -14 14 H 35 a 14 14 90 0 1 -14 -14 V 186.0 H 48" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="21" y="161" width="48" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="21" y1="186" x2="69" y2="186" stroke="#f46d43" stroke-width="1"/>
+	<text x="28" y="178.7" fill="#000000" font-family="Verdana" font-size="12">HAVE</text>
+</g>
+
+<!-- Association CAN LIKE -->
+<path d="M149 186 C 106.333333333 123.666666667 106.333333333 78.6666666667 149 51" fill="none" stroke="#f46d43" stroke-width="2"/>
+<text x="123.0" y="110" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<path d="M149 186 C 191.666666667 123.666666667 191.666666667 78.6666666667 149 51" fill="none" stroke="#f46d43" stroke-width="2"/>
+<text x="153.0" y="110" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-CAN LIKE">
+	<path d="M 171 26 a 14 14 90 0 1 14 14 V 51 h -72 V 40 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 185 51.0 v 11 a 14 14 90 0 1 -14 14 H 127 a 14 14 90 0 1 -14 -14 V 51.0 H 72" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="113" y="26" width="72" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="113" y1="51" x2="185" y2="51" stroke="#f46d43" stroke-width="1"/>
+	<text x="120" y="43.7" fill="#000000" font-family="Verdana" font-size="12">CAN LIKE</text>
+</g>
+
+<!-- Entity DEFAULT -->
+<g id="entity-DEFAULT">
+	<g id="frame-DEFAULT">
+		<rect x="9" y="9" width="72" height="25" fill="#a6d96a" stroke="#a6d96a" stroke-width="0"/>
+		<rect x="9" y="34.0" width="72" height="59" fill="#d9ef8b" stroke="#d9ef8b" stroke-width="0"/>
+		<rect x="9" y="9" width="72" height="84" fill="none" stroke="#66bd63" stroke-width="2"/>
+		<line x1="9" y1="34" x2="81" y2="34" stroke="#66bd63" stroke-width="1"/>
+	</g>
+	<text x="17" y="26.7" fill="#000000" font-family="Verdana" font-size="12">DEFAULT</text>
+	<text x="14" y="51.8" fill="#000000" font-family="Verdana" font-size="12">Name</text>
+	<line x1="14" y1="54" x2="50" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="68.8" fill="#000000" font-family="Verdana" font-size="12">Decription</text>
+	<text x="14" y="85.8" fill="#000000" font-family="Verdana" font-size="12">Image</text>
+</g>
+
+<!-- Entity GENDER -->
+<g id="entity-GENDER">
+	<g id="frame-GENDER">
+		<rect x="229" y="270" width="80" height="25" fill="#a6d96a" stroke="#a6d96a" stroke-width="0"/>
+		<rect x="229" y="295.0" width="80" height="43" fill="#d9ef8b" stroke="#d9ef8b" stroke-width="0"/>
+		<rect x="229" y="270" width="80" height="68" fill="none" stroke="#66bd63" stroke-width="2"/>
+		<line x1="229" y1="295" x2="309" y2="295" stroke="#66bd63" stroke-width="1"/>
+	</g>
+	<text x="243" y="287.7" fill="#000000" font-family="Verdana" font-size="12">GENDER</text>
+	<text x="234" y="312.8" fill="#000000" font-family="Verdana" font-size="12">Name</text>
+	<line x1="234" y1="315" x2="270" y2="315" stroke="#000000" stroke-width="1"/>
+	<text x="234" y="329.8" fill="#000000" font-family="Verdana" font-size="12">Description</text>
+</g>
+
+<!-- Entity USER -->
+<g id="entity-USER">
+	<g id="frame-USER">
+		<rect x="109" y="118" width="80" height="25" fill="#a6d96a" stroke="#a6d96a" stroke-width="0"/>
+		<rect x="109" y="143.0" width="80" height="111" fill="#d9ef8b" stroke="#d9ef8b" stroke-width="0"/>
+		<rect x="109" y="118" width="80" height="136" fill="none" stroke="#66bd63" stroke-width="2"/>
+		<line x1="109" y1="143" x2="189" y2="143" stroke="#66bd63" stroke-width="1"/>
+	</g>
+	<text x="132" y="135.7" fill="#000000" font-family="Verdana" font-size="12">USER</text>
+	<text x="114" y="160.7" fill="#000000" font-family="Verdana" font-size="12">Username</text>
+	<line x1="114" y1="163" x2="176" y2="163" stroke="#000000" stroke-width="1"/>
+	<text x="114" y="177.7" fill="#000000" font-family="Verdana" font-size="12">Firstname</text>
+	<text x="114" y="194.8" fill="#000000" font-family="Verdana" font-size="12">Lastname</text>
+	<text x="114" y="211.8" fill="#000000" font-family="Verdana" font-size="12">Age</text>
+	<text x="114" y="228.8" fill="#000000" font-family="Verdana" font-size="12">Description</text>
+	<text x="114" y="245.8" fill="#000000" font-family="Verdana" font-size="12">UserImage</text>
+</g>
+</svg>

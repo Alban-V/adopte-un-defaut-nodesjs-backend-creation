@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>DEFAULT</span> (
+    <span class='primary'>Name</span>,
+    <span class='normal'>Decription</span>,
+    <span class='normal'>Image</span>
+  )
+</div>
+<div>
+  <span class='relation'>CAN LIKE</span> (
+    <span class='foreign primary'>Username</span>,
+    <span class='foreign primary'>Username.1</span>
+  )
+</div>
+<div>
+  <span class='relation'>HAVE</span> (
+    <span class='foreign primary'>Name</span>,
+    <span class='foreign primary'>Username</span>
+  )
+</div>
+<div>
+  <span class='relation'>USER</span> (
+    <span class='primary'>Username</span>,
+    <span class='normal'>Firstname</span>,
+    <span class='normal'>Lastname</span>,
+    <span class='normal'>Age</span>,
+    <span class='normal'>Description</span>,
+    <span class='normal'>UserImage</span>,
+    <span class='foreign'>Name</span>
+  )
+</div>
+<div>
+  <span class='relation'>RESEARCH</span> (
+    <span class='foreign primary'>Username</span>,
+    <span class='foreign primary'>Name</span>
+  )
+</div>
+<div>
+  <span class='relation'>GENDER</span> (
+    <span class='primary'>Name</span>,
+    <span class='normal'>Description</span>
+  )
+</div>
+</div>
+</body>
+</html>

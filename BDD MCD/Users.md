@@ -1,0 +1,6 @@
+**DEFAULT** (<ins>Name</ins>, Decription, Image)  
+**CAN LIKE** (<ins>_Username_</ins>, <ins>_Username.1_</ins>)  
+**HAVE** (<ins>_Name_</ins>, <ins>_Username_</ins>)  
+**USER** (<ins>Username</ins>, Firstname, Lastname, Age, Description, UserImage, _Name_)  
+**RESEARCH** (<ins>_Username_</ins>, <ins>_Name_</ins>)  
+**GENDER** (<ins>Name</ins>, Description)

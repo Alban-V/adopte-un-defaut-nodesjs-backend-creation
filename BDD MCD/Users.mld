@@ -1,0 +1,20 @@
+%%mocodo
+:
+DEFAULT: Name, Decription, Image
+:
+CAN LIKE: #Username->USER->Username, _#Username.1->USER->Username
+:::
+
+
+:
+HAVE: #Name->DEFAULT->Name, _#Username->USER->Username
+:
+USER: Username, Firstname, Lastname, Age, Description, UserImage, #Name->GENDER->Name
+:
+RESEARCH: #Username->USER->Username, _#Name->GENDER->Name
+:
+
+
+:::::
+GENDER: Name, Description
+:
