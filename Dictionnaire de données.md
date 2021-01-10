@@ -3,7 +3,7 @@
 
 | Champ | Type | Spécificités | Description |
 |-|-|-|-|
-|id|INTEGER| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id de l'utilisateur|
+|id|INT| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id de l'utilisateur|
 |username|
 |email|
 |firstname|
@@ -20,7 +20,7 @@
 
 | Champ | Type | Spécificités | Description |
 |-|-|-|-|
-|id|INTEGER| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id du défaut|
+|id|INT| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id du défaut|
 |name|
 |description|
 |image|
@@ -33,6 +33,6 @@
 
 | Champ | Type | Spécificités | Description |
 |-|-|-|-|
-|id|INTEGER| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id du genre|
+|id|INT| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id du genre|
 |name|
 |
