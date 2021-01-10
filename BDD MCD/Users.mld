@@ -1,17 +1,17 @@
 %%mocodo
 :
-DEFAULT: Name, Decription, Image
+FLAWS: Name, Decription, Image
 :
-RESEARCH: #Username->USER->Username, _#Name->GENDER->Name, _#Name.1->DEFAULT->Name
+RESEARCH: #Username->USER->Username, _#Name->GENDER->Name, _#Name.1->FLAWS->Name
 :
 GENDER: Name, Description
 :
 
 
 :
-HAVE: #Name->DEFAULT->Name, _#Username->USER->Username
+HAVE: #Name->FLAWS->Name, _#Username->USER->Username
 :
-USER: Username, Firstname, Lastname, Age, Description, UserImage, #Name->GENDER->Name
+USER: Username, Email, Firstname, Lastname, Age, Description, UserImage, #Name->GENDER->Name
 :::
 
 

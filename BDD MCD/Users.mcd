@@ -1,9 +1,9 @@
-DEFAULT: Name, Decription, Image
-RESEARCH, 1N USER, 0N GENDER, 0N DEFAULT
+FLAWS: Name, Decription, Image
+RESEARCH, 1N USER, 0N GENDER, 0N FLAWS
 GENDER: Name, Description
 
-HAVE, 0N DEFAULT, 1N USER
-USER: Username, Firstname, Lastname, Age, Description, UserImage
+HAVE, 0N FLAWS, 1N USER
+USER: Username, Email, Firstname, Lastname, Age, Description, UserImage
 BELONGS TO, 0N GENDER, 11 USER
 
 :

@@ -4,6 +4,7 @@
 - Name
 - Description
 - Username
+- Email
 - Firstname
 - Lastname
 - Age
