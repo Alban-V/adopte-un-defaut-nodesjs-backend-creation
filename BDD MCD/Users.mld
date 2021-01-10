@@ -1,6 +1,6 @@
 %%mocodo
 :
-FLAWS: Name, Decription, Image
+FLAWS: Name, Description, Image
 :
 RESEARCH: #Username->USER->Username, _#Name->GENDER->Name, _#Name.1->FLAWS->Name
 :

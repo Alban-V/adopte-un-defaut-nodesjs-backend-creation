@@ -1,4 +1,4 @@
-**FLAWS** (<ins>Name</ins>, Decription, Image)  
+**FLAWS** (<ins>Name</ins>, Description, Image)  
 **RESEARCH** (<ins>_Username_</ins>, <ins>_Name_</ins>, <ins>_Name.1_</ins>)  
 **GENDER** (<ins>Name</ins>, Description)  
 **HAVE** (<ins>_Name_</ins>, <ins>_Username_</ins>)  
