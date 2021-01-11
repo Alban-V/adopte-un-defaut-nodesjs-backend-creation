@@ -16,7 +16,7 @@
 |gender_id|INT|NOT_NULL / FOREIGN_KEY / UNSIGNED| Genre de l'utilisateur (Homme, Femme, Autre)|
 |user_image|VARCHAR (255)|NULL| Image de profil de l'utilisateur
 |created_at|TIMESTAMP| NOT_NULL / CURRENT_TIMESTAMP | Date de création du profil | 
-|updated_at|TIMESTAMP| NOT_NULL / CURRENT_TIMESTAMP | Date de mise à jour du profil |
+|updated_at|TIMESTAMP| NOT_NULL / ON_UPDATE | Date de mise à jour du profil |
 <br/>
 
 >**Table FLAW**
