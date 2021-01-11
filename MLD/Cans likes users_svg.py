@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# Généré par Mocodo 2.3.7 le Mon, 11 Jan 2021 08:19:09
+# Généré par Mocodo 2.3.7 le Mon, 11 Jan 2021 08:52:11
 
 from __future__ import division
 from math import hypot
@@ -183,8 +183,8 @@ lines += u"""\n	</g>""" % {}
 lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">CAN LIKE USER</text>""" % {'x': -48+x, 'y': -16.3+y, 'text_color': colors['entity_cartouche_text_color']}
 lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">#user_id</text>""" % {'x': -48+x, 'y': 8.8+y, 'text_color': colors['entity_attribute_text_color']}
 lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -48+x, 'y0': 11+y, 'x1': 7+x, 'y1': 11+y, 'stroke_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">#user_id</text>""" % {'x': -48+x, 'y': 25.8+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -48+x, 'y0': 28+y, 'x1': 7+x, 'y1': 28+y, 'stroke_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">#user_id_liked</text>""" % {'x': -48+x, 'y': 25.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -48+x, 'y0': 28+y, 'x1': 43+x, 'y1': 28+y, 'stroke_color': colors['entity_attribute_text_color']}
 lines += u"""\n</g>""" % {}
 
 lines += u"""\n\n<!-- Entity FLAW -->"""

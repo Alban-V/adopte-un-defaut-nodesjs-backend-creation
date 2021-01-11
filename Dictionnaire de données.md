@@ -53,7 +53,7 @@
 |-|-|-|-|
 |id|INT|PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED|
 |user_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL | Id de l'utilisateur ayant aimé
-|user_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL| Id de l'utilisateur ayant été aimé
+|user_id_liked|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL| Id de l'utilisateur ayant été aimé
 
 <br>
 

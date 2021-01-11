@@ -6,7 +6,7 @@ RESEARCH_GENDER: #user_id->USER->id, _#gender_id->GENDER->id,
 :::
 
 :
-CAN LIKE USER: #user_id->USER->id, _#user_id->USER->id
+CAN LIKE USER: #user_id->USER->id, _#user_id_liked->USER->id
 :
 USER: id, username, email, firstname, lastname, age, description, userImage, created_at, updated_at, #gender_id->GENDER->id
 :
