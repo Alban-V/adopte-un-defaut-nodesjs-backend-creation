@@ -8,7 +8,7 @@ RESEARCH_GENDER: #user_id->USER->id, _#gender_id->GENDER->id,
 :
 CAN LIKE: #user_id->USER->id, _#user_id->USER->id
 :
-USER: id, username, email, firstname, lastname, age, description, userImage, #gender_id->GENDER->id
+USER: id, username, email, firstname, lastname, age, description, userImage, created_at, updated_at, #gender_id->GENDER->id
 :
 HAVE: #flaw_id->FLAW->id, _#username_id->USER->id
 :

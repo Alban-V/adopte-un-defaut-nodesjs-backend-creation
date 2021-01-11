@@ -27,8 +27,6 @@
 |name|VARCHAR (64)|NOT_NULL / UNIQUE | Nom du défaut |
 |description|VARCHAR (255)|NULL| Description du défaut |
 |image|VARCHAR (255)|NOT_NULL| Image représentative du défaut |
-|created_at|TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP | Date de création du défaut |
-|updated_at|TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP |Date de mise à jour du défaut |
 
 <br/>
 
@@ -40,8 +38,6 @@
 |name| VARCHAR (64)|NOT_NULL / UNIQUE | Nom du genre |
 |description| VARCHAR (255)|NULL| Description du genre |
 |image| VARCHAR (255)|NOT_NULL| Image représentative du genre |
-|created_at| TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP |Date de création du genre |
-|updated_at| TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP |Date de mise à jour du genre |
 
 <br/>
 

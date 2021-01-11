@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# Généré par Mocodo 2.3.7 le Mon, 11 Jan 2021 06:45:42
+# Généré par Mocodo 2.3.7 le Mon, 11 Jan 2021 07:40:10
 
 from __future__ import division
 from math import hypot
@@ -241,22 +241,24 @@ lines += u"""\n\n<!-- Entity USER -->"""
 (x,y) = (cx[u"USER"],cy[u"USER"])
 lines += u"""\n<g id="entity-USER">""" % {}
 lines += u"""\n	<g id="frame-USER">""" % {}
-lines += u"""\n		<rect x="%(x)s" y="%(y)s" width="82" height="25" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'x': -41+x, 'y': -93+y, 'color': colors['entity_cartouche_color'], 'stroke_color': colors['entity_cartouche_color']}
-lines += u"""\n		<rect x="%(x)s" y="%(y)s" width="82" height="161" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'x': -41+x, 'y': -68.0+y, 'color': colors['entity_color'], 'stroke_color': colors['entity_color']}
-lines += u"""\n		<rect x="%(x)s" y="%(y)s" width="82" height="186" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x': -41+x, 'y': -93+y, 'color': colors['transparent_color'], 'stroke_color': colors['entity_stroke_color']}
-lines += u"""\n		<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -41+x, 'y0': -68+y, 'x1': 41+x, 'y1': -68+y, 'stroke_color': colors['entity_stroke_color']}
+lines += u"""\n		<rect x="%(x)s" y="%(y)s" width="82" height="25" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'x': -41+x, 'y': -110+y, 'color': colors['entity_cartouche_color'], 'stroke_color': colors['entity_cartouche_color']}
+lines += u"""\n		<rect x="%(x)s" y="%(y)s" width="82" height="195" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="0"/>""" % {'x': -41+x, 'y': -85.0+y, 'color': colors['entity_color'], 'stroke_color': colors['entity_color']}
+lines += u"""\n		<rect x="%(x)s" y="%(y)s" width="82" height="220" fill="%(color)s" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x': -41+x, 'y': -110+y, 'color': colors['transparent_color'], 'stroke_color': colors['entity_stroke_color']}
+lines += u"""\n		<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -41+x, 'y0': -85+y, 'x1': 41+x, 'y1': -85+y, 'stroke_color': colors['entity_stroke_color']}
 lines += u"""\n	</g>""" % {}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">USER</text>""" % {'x': -17+x, 'y': -75.3+y, 'text_color': colors['entity_cartouche_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">id</text>""" % {'x': -36+x, 'y': -50.3+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -36+x, 'y0': -48+y, 'x1': -24+x, 'y1': -48+y, 'stroke_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">username</text>""" % {'x': -36+x, 'y': -33.3+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">email</text>""" % {'x': -36+x, 'y': -16.3+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">firstname</text>""" % {'x': -36+x, 'y': 0.8+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">lastname</text>""" % {'x': -36+x, 'y': 17.8+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">age</text>""" % {'x': -36+x, 'y': 34.8+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">description</text>""" % {'x': -36+x, 'y': 51.8+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">userImage</text>""" % {'x': -36+x, 'y': 68.8+y, 'text_color': colors['entity_attribute_text_color']}
-lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">#gender_id</text>""" % {'x': -36+x, 'y': 85.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">USER</text>""" % {'x': -17+x, 'y': -92.3+y, 'text_color': colors['entity_cartouche_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">id</text>""" % {'x': -36+x, 'y': -67.3+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<line x1="%(x0)s" y1="%(y0)s" x2="%(x1)s" y2="%(y1)s" stroke="%(stroke_color)s" stroke-width="1"/>""" % {'x0': -36+x, 'y0': -65+y, 'x1': -24+x, 'y1': -65+y, 'stroke_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">username</text>""" % {'x': -36+x, 'y': -50.3+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">email</text>""" % {'x': -36+x, 'y': -33.3+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">firstname</text>""" % {'x': -36+x, 'y': -16.3+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">lastname</text>""" % {'x': -36+x, 'y': 0.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">age</text>""" % {'x': -36+x, 'y': 17.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">description</text>""" % {'x': -36+x, 'y': 34.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">userImage</text>""" % {'x': -36+x, 'y': 51.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">created_at</text>""" % {'x': -36+x, 'y': 68.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">updated_at</text>""" % {'x': -36+x, 'y': 85.8+y, 'text_color': colors['entity_attribute_text_color']}
+lines += u"""\n	<text x="%(x)s" y="%(y)s" fill="%(text_color)s" font-family="Verdana" font-size="12">#gender_id</text>""" % {'x': -36+x, 'y': 102.8+y, 'text_color': colors['entity_attribute_text_color']}
 lines += u"""\n</g>""" % {}
 
 lines += u"""\n\n<!-- Entity HAVE -->"""
@@ -293,7 +295,7 @@ lines += u"""\n</g>""" % {}
 
 lines += u"""\n\n<!-- Link from "id" (CAN LIKE) to "id" (USER) -->"""
 (fs,ps) = (min([(1, 1), (-1, 1), (1, -1), (-1, -1)], key=lambda fs_ps: abs(cx[u"CAN LIKE"]+34*fs_ps[0] - cx[u"USER"]-41*fs_ps[1])))
-(xf,yf,xp,yp) = (cx[u"CAN LIKE"]+34*fs,cy[u"CAN LIKE"]+4.5,cx[u"USER"]+41*ps,cy[u"USER"]+-54.5)
+(xf,yf,xp,yp) = (cx[u"CAN LIKE"]+34*fs,cy[u"CAN LIKE"]+4.5,cx[u"USER"]+41*ps,cy[u"USER"]+-71.5)
 lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': xf, 'y0': yf, 'x1': xf+(xp-xf)/2 if fs != ps else xf+54*fs, 'y1': yf+(yp-yf)/2, 'x2': xf+(xp-xf)/3 if fs != ps else xp+54*ps, 'y2': yp, 'x3': xp, 'y3': yp, 'stroke_color': colors['leg_stroke_color']}
 path = arrow(xp,yp,ps,0)
 lines += u"""\n<path d="%(path)s" fill="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'stroke_color': colors['leg_stroke_color']}
@@ -301,7 +303,7 @@ lines += u"""\n<circle cx="%(cx)s" cy="%(cy)s" r="2" stroke="%(stroke_color)s" s
 
 lines += u"""\n\n<!-- Link from "id" (CAN LIKE) to "id" (USER) -->"""
 (fs,ps) = (min([(-1, -1), (1, -1), (-1, 1), (1, 1)], key=lambda fs_ps: abs(cx[u"CAN LIKE"]+34*fs_ps[0] - cx[u"USER"]-41*fs_ps[1])))
-(xf,yf,xp,yp) = (cx[u"CAN LIKE"]+34*fs,cy[u"CAN LIKE"]+21.5,cx[u"USER"]+41*ps,cy[u"USER"]+-54.5)
+(xf,yf,xp,yp) = (cx[u"CAN LIKE"]+34*fs,cy[u"CAN LIKE"]+21.5,cx[u"USER"]+41*ps,cy[u"USER"]+-71.5)
 lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': xf, 'y0': yf, 'x1': xf+(xp-xf)/2 if fs != ps else xf+54*fs, 'y1': yf+(yp-yf)/2, 'x2': xf+(xp-xf)/3 if fs != ps else xp+54*ps, 'y2': yp, 'x3': xp, 'y3': yp, 'stroke_color': colors['leg_stroke_color']}
 path = arrow(xp,yp,ps,0)
 lines += u"""\n<path d="%(path)s" fill="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'stroke_color': colors['leg_stroke_color']}
@@ -309,7 +311,7 @@ lines += u"""\n<circle cx="%(cx)s" cy="%(cy)s" r="2" stroke="%(stroke_color)s" s
 
 lines += u"""\n\n<!-- Link from "id" (RESEARCH_GENDER) to "id" (USER) -->"""
 (fs,ps) = (min([(1, 1), (-1, 1), (1, -1), (-1, -1)], key=lambda fs_ps: abs(cx[u"RESEARCH_GENDER"]+68*fs_ps[0] - cx[u"USER"]-41*fs_ps[1])))
-(xf,yf,xp,yp) = (cx[u"RESEARCH_GENDER"]+68*fs,cy[u"RESEARCH_GENDER"]+-3.5,cx[u"USER"]+41*ps,cy[u"USER"]+-54.5)
+(xf,yf,xp,yp) = (cx[u"RESEARCH_GENDER"]+68*fs,cy[u"RESEARCH_GENDER"]+-3.5,cx[u"USER"]+41*ps,cy[u"USER"]+-71.5)
 lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': xf, 'y0': yf, 'x1': xf+(xp-xf)/2 if fs != ps else xf+54*fs, 'y1': yf+(yp-yf)/2, 'x2': xf+(xp-xf)/3 if fs != ps else xp+54*ps, 'y2': yp, 'x3': xp, 'y3': yp, 'stroke_color': colors['leg_stroke_color']}
 path = arrow(xp,yp,ps,0)
 lines += u"""\n<path d="%(path)s" fill="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'stroke_color': colors['leg_stroke_color']}
@@ -325,7 +327,7 @@ lines += u"""\n<circle cx="%(cx)s" cy="%(cy)s" r="2" stroke="%(stroke_color)s" s
 
 lines += u"""\n\n<!-- Link from "id" (USER) to "id" (GENDER) -->"""
 (fs,ps) = (min([(1, 1), (-1, 1), (1, -1), (-1, -1)], key=lambda fs_ps: abs(cx[u"USER"]+41*fs_ps[0] - cx[u"GENDER"]-39*fs_ps[1])))
-(xf,yf,xp,yp) = (cx[u"USER"]+41*fs,cy[u"USER"]+81.5,cx[u"GENDER"]+39*ps,cy[u"GENDER"]+-20.5)
+(xf,yf,xp,yp) = (cx[u"USER"]+41*fs,cy[u"USER"]+98.5,cx[u"GENDER"]+39*ps,cy[u"GENDER"]+-20.5)
 lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': xf, 'y0': yf, 'x1': xf+(xp-xf)/2 if fs != ps else xf+54*fs, 'y1': yf+(yp-yf)/2, 'x2': xf+(xp-xf)/3 if fs != ps else xp+54*ps, 'y2': yp, 'x3': xp, 'y3': yp, 'stroke_color': colors['leg_stroke_color']}
 path = arrow(xp,yp,ps,0)
 lines += u"""\n<path d="%(path)s" fill="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'stroke_color': colors['leg_stroke_color']}
@@ -341,7 +343,7 @@ lines += u"""\n<circle cx="%(cx)s" cy="%(cy)s" r="2" stroke="%(stroke_color)s" s
 
 lines += u"""\n\n<!-- Link from "id" (HAVE) to "id" (USER) -->"""
 (fs,ps) = (min([(-1, -1), (1, -1), (-1, 1), (1, 1)], key=lambda fs_ps: abs(cx[u"HAVE"]+50*fs_ps[0] - cx[u"USER"]-41*fs_ps[1])))
-(xf,yf,xp,yp) = (cx[u"HAVE"]+50*fs,cy[u"HAVE"]+21.5,cx[u"USER"]+41*ps,cy[u"USER"]+-54.5)
+(xf,yf,xp,yp) = (cx[u"HAVE"]+50*fs,cy[u"HAVE"]+21.5,cx[u"USER"]+41*ps,cy[u"USER"]+-71.5)
 lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': xf, 'y0': yf, 'x1': xf+(xp-xf)/2 if fs != ps else xf+54*fs, 'y1': yf+(yp-yf)/2, 'x2': xf+(xp-xf)/3 if fs != ps else xp+54*ps, 'y2': yp, 'x3': xp, 'y3': yp, 'stroke_color': colors['leg_stroke_color']}
 path = arrow(xp,yp,ps,0)
 lines += u"""\n<path d="%(path)s" fill="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'stroke_color': colors['leg_stroke_color']}
@@ -349,7 +351,7 @@ lines += u"""\n<circle cx="%(cx)s" cy="%(cy)s" r="2" stroke="%(stroke_color)s" s
 
 lines += u"""\n\n<!-- Link from "id" (RESEARCH_FLAW) to "id" (USER) -->"""
 (fs,ps) = (min([(1, 1), (-1, 1), (1, -1), (-1, -1)], key=lambda fs_ps: abs(cx[u"RESEARCH_FLAW"]+59*fs_ps[0] - cx[u"USER"]-41*fs_ps[1])))
-(xf,yf,xp,yp) = (cx[u"RESEARCH_FLAW"]+59*fs,cy[u"RESEARCH_FLAW"]+-3.5,cx[u"USER"]+41*ps,cy[u"USER"]+-54.5)
+(xf,yf,xp,yp) = (cx[u"RESEARCH_FLAW"]+59*fs,cy[u"RESEARCH_FLAW"]+-3.5,cx[u"USER"]+41*ps,cy[u"USER"]+-71.5)
 lines += u"""\n<path d="M%(x0)s %(y0)s C %(x1)s %(y1)s %(x2)s %(y2)s %(x3)s %(y3)s" fill="none" stroke="%(stroke_color)s" stroke-width="2"/>""" % {'x0': xf, 'y0': yf, 'x1': xf+(xp-xf)/2 if fs != ps else xf+54*fs, 'y1': yf+(yp-yf)/2, 'x2': xf+(xp-xf)/3 if fs != ps else xp+54*ps, 'y2': yp, 'x3': xp, 'y3': yp, 'stroke_color': colors['leg_stroke_color']}
 path = arrow(xp,yp,ps,0)
 lines += u"""\n<path d="%(path)s" fill="%(stroke_color)s" stroke-width="0"/>""" % {'path': path, 'stroke_color': colors['leg_stroke_color']}
