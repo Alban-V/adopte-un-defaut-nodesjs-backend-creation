@@ -44,3 +44,43 @@
 ---
 ---
 **TABLES ASSOCIATIVES**
+
+<br>
+
+>**Table CAN LIKE USER**
+
+| Champ | Type | Spécificités | Description |
+|-|-|-|-|
+|id|INT|PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED|
+|user_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL | Id de l'utilisateur ayant aimé
+|user_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL| Id de l'utilisateur ayant été aimé
+
+<br>
+
+>**Table RESEARCH GENDER**
+
+| Champ | Type | Spécificités | Description |
+|-|-|-|-|
+|id|INT|PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED|
+|user_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL | Id de l'utilisateur
+|gender_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL | Id du genre recherché par l'utilisateur (si gender_id: 1 = homme, 2 = femme, 3 = autre).
+
+<br>
+
+>**Table RESEARCH FLAW**
+
+| Champ | Type | Spécificités | Description |
+|-|-|-|-|
+|id|INT|PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED|
+|user_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL | Id de l'utilisateur
+|flaw_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL| Id du défaut recherché par l'utilisateur
+
+<br>
+
+>**Table HAVE FLOW**
+
+| Champ | Type | Spécificités | Description |
+|-|-|-|-|
+|id|INT|PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED|
+|user_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL | Id de l'utilisateur
+|flaw_id|INT| FOREIGN_KEY / UNSIGNED / NOT_NULL| Id du défaut de l'utilisateur

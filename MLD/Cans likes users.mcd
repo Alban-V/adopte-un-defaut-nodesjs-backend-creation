@@ -6,15 +6,16 @@ RESEARCH_GENDER: #user_id->USER->id, _#gender_id->GENDER->id,
 :::
 
 :
-CAN LIKE: #user_id->USER->id, _#user_id->USER->id
+CAN LIKE USER: #user_id->USER->id, _#user_id->USER->id
 :
 USER: id, username, email, firstname, lastname, age, description, userImage, created_at, updated_at, #gender_id->GENDER->id
 :
-HAVE: #flaw_id->FLAW->id, _#username_id->USER->id
+HAVE FLAW: #flaw_id->FLAW->id, _#user_id->USER->id
 :
 
 :::
 RESEARCH_FLAW: #user_id->USER->id, _#flaw_id->FLAW->id,
 :
 FLAW: id, name, description, image,
+:
 :
