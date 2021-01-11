@@ -1,6 +1,0 @@
-**FLAWS** (<ins>Name</ins>, Description, Image)  
-**RESEARCH** (<ins>_Username_</ins>, <ins>_Name_</ins>, <ins>_Name.1_</ins>)  
-**GENDER** (<ins>Name</ins>, Description)  
-**HAVE** (<ins>_Name_</ins>, <ins>_Username_</ins>)  
-**USER** (<ins>Username</ins>, Email, Firstname, Lastname, Age, Description, UserImage, _Name_)  
-**CAN LIKE** (<ins>_Username_</ins>, <ins>_Username.1_</ins>)

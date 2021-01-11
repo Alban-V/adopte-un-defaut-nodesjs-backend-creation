@@ -1,9 +1,9 @@
-FLAWS: Name, Description, Image
-RESEARCH, 1N USER, 0N GENDER, 0N FLAWS
-GENDER: Name, Description
+FLAW: FlawId, Name, Description, Image
+RESEARCH, 0N USER, 0N GENDER, 0N FLAW
+GENDER:GenderId, Name, Description, Image
 
-HAVE, 0N FLAWS, 1N USER
-USER: Username, Email, Firstname, Lastname, Age, Description, UserImage
+HAVE, 0N FLAW, 0N USER
+USER: UserId, Username, Email, Firstname, Lastname, Age, Description, UserImage
 BELONGS TO, 0N GENDER, 11 USER
 
 :

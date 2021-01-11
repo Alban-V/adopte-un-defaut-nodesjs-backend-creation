@@ -11,47 +11,51 @@
 <body>
 <div id='mld'>
 <div>
-  <span class='relation'>FLAWS</span> (
-    <span class='primary'>Name</span>,
+  <span class='relation'>FLAW</span> (
+    <span class='primary'>FlawId</span>,
+    <span class='normal'>Name</span>,
     <span class='normal'>Description</span>,
     <span class='normal'>Image</span>
   )
 </div>
 <div>
   <span class='relation'>RESEARCH</span> (
-    <span class='foreign primary'>Username</span>,
-    <span class='foreign primary'>Name</span>,
-    <span class='foreign primary'>Name.1</span>
+    <span class='foreign primary'>UserId</span>,
+    <span class='foreign primary'>GenderId</span>,
+    <span class='foreign primary'>FlawId</span>
   )
 </div>
 <div>
   <span class='relation'>GENDER</span> (
-    <span class='primary'>Name</span>,
-    <span class='normal'>Description</span>
+    <span class='primary'>GenderId</span>,
+    <span class='normal'>Name</span>,
+    <span class='normal'>Description</span>,
+    <span class='normal'>Image</span>
   )
 </div>
 <div>
   <span class='relation'>HAVE</span> (
-    <span class='foreign primary'>Name</span>,
-    <span class='foreign primary'>Username</span>
+    <span class='foreign primary'>FlawId</span>,
+    <span class='foreign primary'>UserId</span>
   )
 </div>
 <div>
   <span class='relation'>USER</span> (
-    <span class='primary'>Username</span>,
+    <span class='primary'>UserId</span>,
+    <span class='normal'>Username</span>,
     <span class='normal'>Email</span>,
     <span class='normal'>Firstname</span>,
     <span class='normal'>Lastname</span>,
     <span class='normal'>Age</span>,
     <span class='normal'>Description</span>,
     <span class='normal'>UserImage</span>,
-    <span class='foreign'>Name</span>
+    <span class='foreign'>GenderId</span>
   )
 </div>
 <div>
   <span class='relation'>CAN LIKE</span> (
-    <span class='foreign primary'>Username</span>,
-    <span class='foreign primary'>Username.1</span>
+    <span class='foreign primary'>UserId</span>,
+    <span class='foreign primary'>UserId.1</span>
   )
 </div>
 </div>
