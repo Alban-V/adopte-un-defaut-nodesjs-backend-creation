@@ -11,39 +11,25 @@
 <body>
 <div id='mld'>
 <div>
-  <span class='relation'>FLAW</span> (
-    <span class='primary'>id</span>,
-    <span class='normal'>name</span>,
-    <span class='normal'>description</span>,
-    <span class='normal'>image</span>,
-    <span class='normal'>created_at</span>,
-    <span class='normal'>updated_at</span>,
-    <span class='normal'></span>
-  )
-</div>
-<div>
-  <span class='relation'>RESEARCH</span> (
-    <span class='primary'>id</span>,
-    <span class='normal'>#user_id</span>,
-    <span class='primary'>#gender_id</span>,
-    <span class='primary'>#flaw_id</span>
-  )
-</div>
-<div>
   <span class='relation'>GENDER</span> (
     <span class='primary'>id</span>,
     <span class='normal'>name</span>,
     <span class='normal'>description</span>,
-    <span class='normal'>created_at</span>,
-    <span class='normal'>updated_at</span>,
+    <span class='normal'>image</span>,
     <span class='normal'></span>
   )
 </div>
 <div>
-  <span class='relation'>HAVE</span> (
-    <span class='primary'>id</span>,
-    <span class='normal'>#flaw_id</span>,
-    <span class='primary'>#username_id</span>
+  <span class='relation'>RESEARCH_GENDER</span> (
+    <span class='primary'>#user_id</span>,
+    <span class='primary'>#gender_id</span>,
+    <span class='normal'></span>
+  )
+</div>
+<div>
+  <span class='relation'>CAN LIKE</span> (
+    <span class='primary'>#user_id</span>,
+    <span class='primary'>#user_id.1</span>
   )
 </div>
 <div>
@@ -56,16 +42,29 @@
     <span class='normal'>age</span>,
     <span class='normal'>description</span>,
     <span class='normal'>userImage</span>,
-    <span class='normal'>created_at</span>,
-    <span class='normal'>updated_at</span>,
     <span class='normal'>#gender_id</span>
   )
 </div>
 <div>
-  <span class='relation'>CAN LIKE</span> (
+  <span class='relation'>HAVE</span> (
+    <span class='primary'>#flaw_id</span>,
+    <span class='primary'>#username_id</span>
+  )
+</div>
+<div>
+  <span class='relation'>RESEARCH_FLAW</span> (
+    <span class='primary'>#user_id</span>,
+    <span class='primary'>#flaw_id</span>,
+    <span class='normal'></span>
+  )
+</div>
+<div>
+  <span class='relation'>FLAW</span> (
     <span class='primary'>id</span>,
-    <span class='normal'>#user_id</span>,
-    <span class='primary'>#user_id.1</span>
+    <span class='normal'>name</span>,
+    <span class='normal'>description</span>,
+    <span class='normal'>image</span>,
+    <span class='normal'></span>
   )
 </div>
 </div>
