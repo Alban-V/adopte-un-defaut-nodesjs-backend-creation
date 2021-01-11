@@ -77,7 +77,7 @@
 
 <br>
 
->**Table HAVE FLOW**
+>**Table HAVE FLAW**
 
 | Champ | Type | Spécificités | Description |
 |-|-|-|-|
