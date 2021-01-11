@@ -7,16 +7,16 @@
 | Champ | Type | Spécificités | Description |
 |-|-|-|-|
 |id|INT| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id de l'utilisateur|
-|username|VARCHAR (64)| NOT_NULL / UNIQUE |
-|email|VARCHAR (64)|NOT_NULL / UNIQUE |
-|firstname|VARCHAR (64)|NOT_NULL|
-|lastname|VARCHAR (64)|NOT_NULL|
-|age|TINYINT|NOT_NULL|
-|description|TEXT|NULL|
-|gender_id|INT|NOT_NULL / FOREIGN_KEY / UNSIGNED|
-|user_image|VARCHAR (255)|NULL|
-|created_at|TIMESTAMP| NOT_NULL / CURRENT_TIMESTAMP
-|updated_at|TIMESTAMP| NOT_NULL / CURRENT_TIMESTAMP
+|username|VARCHAR (64)| NOT_NULL / UNIQUE | Username de l'utilisateur|
+|email|VARCHAR (64)|NOT_NULL / UNIQUE | Email de l'utilisateur|
+|firstname|VARCHAR (64)|NOT_NULL| Prénom de l'utilisateur|
+|lastname|VARCHAR (64)|NOT_NULL| Nom de famille de l'utilisateur |
+|age|TINYINT|NOT_NULL| Âge de l'utilisateur |
+|description|TEXT|NULL| Description de l'utilisateur |
+|gender_id|INT|NOT_NULL / FOREIGN_KEY / UNSIGNED| Genre de l'utilisateur (Homme, Femme, Autre)|
+|user_image|VARCHAR (255)|NULL| Image de profil de l'utilisateur
+|created_at|TIMESTAMP| NOT_NULL / CURRENT_TIMESTAMP | Date de création du profil | 
+|updated_at|TIMESTAMP| NOT_NULL / CURRENT_TIMESTAMP | Date de mise à jour du profil |
 <br/>
 
 >**Table FLAW**
@@ -24,11 +24,11 @@
 | Champ | Type | Spécificités | Description |
 |-|-|-|-|
 |id|INT| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id du défaut|
-|name|VARCHAR (64)|NOT_NULL / UNIQUE |
-|description|VARCHAR (255)|NULL|
-|image|VARCHAR (255)|NOT_NULL|
-|created_at|TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP
-|updated_at|TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP
+|name|VARCHAR (64)|NOT_NULL / UNIQUE | Nom du défaut |
+|description|VARCHAR (255)|NULL| Description du défaut |
+|image|VARCHAR (255)|NOT_NULL| Image représentative du défaut |
+|created_at|TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP | Date de création du défaut |
+|updated_at|TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP |Date de mise à jour du défaut |
 
 <br/>
 
@@ -37,11 +37,11 @@
 | Champ | Type | Spécificités | Description |
 |-|-|-|-|
 |id|INT| PRIMARY_KEY / NOT_NULL / AUTO_INCREMENT / UNSIGNED| Id du genre|
-|name| VARCHAR (64)|NOT_NULL / UNIQUE |
-|description| VARCHAR (255)|NULL|
-|image| VARCHAR (255)|NOT_NULL|
-|created_at| TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP
-|updated_at| TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP
+|name| VARCHAR (64)|NOT_NULL / UNIQUE | Nom du genre |
+|description| VARCHAR (255)|NULL| Description du genre |
+|image| VARCHAR (255)|NOT_NULL| Image représentative du genre |
+|created_at| TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP |Date de création du genre |
+|updated_at| TIMESTAMP|NOT_NULL / CURRENT_TIMESTAMP |Date de mise à jour du genre |
 
 <br/>
 
